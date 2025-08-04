@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML5 Enhanced Content & Form</title>
+ 
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>HTML5 Content & Form Example</h1>
+    <p>This page demonstrates lists, tables, media, and a fully functional HTML5 form with built-in validation.</p>
+  </header>
+
+  <!-- List Section -->
+  <section>
+    <h2>Favorite Programming Languages (List)</h2>
+    <ul>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>Java</li>
+    </ul>
+    <h2>Hobbies</h2>
+    <ol type="i">
+      <li>Watching movies</li>
+      <li>Singing</li>
+      <li>Hiking</li>
+    </ol>
+  </section>
+
+  <!-- Table Section -->
+  <section>
+    <h2>Weekly Study Schedule (Table)</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Topic</th>
+          <th>Hours</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>HTML & CSS</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>JavaScript</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>Python</td>
+          <td>2</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Media Section: Includes sample video and audio -->
+  <section>
+    <h2>Media Example</h2>
+
+    <!-- Embedded video -->
+    <figure>
+      <figcaption>Sample Video:</figcaption><br>
+      <video controls width="300">
+        <source src="media/codingVideo.mp4" type="video/mp4" />
+      </video>
+    </figure>
+
+    <!-- Embedded audio -->
+    <figure>
+      <figcaption>Sample Audio:</figcaption><br>
+      <audio controls>
+        <source src="media/David Kushner - Daylight.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </figure>
+    <!-- image -->
+     <figure>
+      <figcaption>Sample image:</figcaption><br>
+     <img src="media/coding.jpg" alt="picture of a laptop with codes" width="300">
+     </figure>
+  </section>
+
+  <!-- HTML5 Form Section -->
+  <section>
+    <h2>Contact Form</h2>
+
+    <!-- Begin form -->
+    <form action="#" method="POST" autocomplete="on" enctype="multipart/form-data">
+
+      <!-- Fieldset for personal information -->
+      <fieldset>
+        <legend>Personal Info</legend>
+         <br>
+         
+        <!-- Full name input -->
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your Full name" required minlength="3"/>
+         <br><br>
+
+        <!-- Email input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required/>
+         <br><br>
+
+        <!-- Phone number input with pattern for validation -->
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter your phone number" required/>
+         <br><br>
+
+        <!-- Date of birth input (readonly, preset) -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required readonly value="2000-01-01" />
+      </fieldset>
+       <br><br>
+      <!-- Fieldset for preferences -->
+      <fieldset>
+        <legend>Preferences</legend>
+        <br>
+        <!-- Select dropdown for favorite language -->
+        <label for="language">Favorite Language:</label>
+        <select id="language" name="language" required>
+          <option value="">--Select--</option>
+          <option value="python">Python</option>
+          <option value="javascript">JavaScript</option>
+          <option value="java">Java</option>
+        </select>
+        <br><br>
+
+        <!-- Radio buttons for newsletter subscription -->
+        <label>Subscribe to newsletter:</label>
+        <input type="radio" id="yes" name="subscribe" value="yes" required />
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="subscribe" value="no" />
+        <label for="no">No</label>
+          <br><br>
+
+        <!-- Textarea for comments -->
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Your thoughts..."></textarea>
+      </fieldset>
+      <br><br>
+      <!-- Submit button -->
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer section -->
+  <footer>
+    <p>&copy; 2025 Shann. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
